@@ -1,4 +1,4 @@
-# Vagrantfile to create an apache httpd server with the latest codeit repository
+# Vagrantfile to create an apache httpd server from the codeit repository
 
 ## Details
 * Starts from the [centos/7 Vagrant image](https://app.vagrantup.com/centos/boxes/7)
@@ -7,5 +7,7 @@
 * Starts apache on 443 (host = 1443) and 80 (host = 1080)
 
 ## Usage
-Start and test (will display server information)
+Clone, start and test (will display server information)
+* `git clone https://github.com/jadbaz/vagrant-virtualbox-centos7-httpd-codeit`
+* `cd vagrant-virtualbox-centos7-httpd-codeit`
 * `time vagrant up; echo "*****************************"; curl -v -k https://127.0.0.1:1443 > index.html`
